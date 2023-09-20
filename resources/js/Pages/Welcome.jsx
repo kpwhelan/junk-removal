@@ -37,7 +37,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
 
                 <section className='mb-2'>
                     <div className='p-2 flex justify-around place-items-center text-white'>
-                        <div className='bg-my-sage w-[45%]'>
+                        <div className='bg-my-sage w-[45%] rounded-lg'>
                             <div className='flex items-center justify-between p-3 bg-my-gray bg-opacity-75 h-52 rounded-lg'>
                                 <FontAwesomeIcon icon={faTruck} size='2x'/>
 
@@ -52,7 +52,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             </div>
                         </div>
 
-                        <div className='bg-my-sage w-[45%]'>
+                        <div className='bg-my-sage w-[45%] rounded-lg'>
                             <div className='flex items-center justify-between p-3 bg-my-gray bg-opacity-75 h-52 rounded-lg'>
                                 <FontAwesomeIcon icon={faTrashCan} size='2x'/>
 
