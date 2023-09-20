@@ -3,6 +3,7 @@ import logo from '../../assets/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrashCan } from '@fortawesome/free-regular-svg-icons';
 import { faTruck } from '@fortawesome/free-solid-svg-icons';
+import Footer from '../Components/Footer';
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     return (
@@ -18,8 +19,8 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
 
                         </div>
                         <div className='flex flex-col text-center mr-16'>
-                            <p className='text-lg'>978-877-9784</p>
-                            <p>Call Now!</p>
+                            <p className='text-2xl'>978-877-9784</p>
+                            <p className=' text-2xl'><a href="tel:9788779784">Call Now!</a></p>
                         </div>
                     </div>
 
@@ -79,13 +80,13 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     </div>
                 </section>
 
-                <section>
+                <section className='mb-2'>
                     <div className="min-h-fit flex justify-center text-white bg-[url('/resources/assets/junk-pic-1.jpg')] bg-center bg-cover bg-opacity-80">
-                        <div className='p-3 text-center bg-my-light-gray max-w-[60%] bg-opacity-50'>
+                        <div className='p-3 text-center bg-my-light-gray max-w-[60%] bg-opacity-90'>
                             <p className='text-[4em]'>Why ProHaul?</p>
                             <ul className='text-[1.5em]'>
                                 <li className='mb-5'>
-                                    ProHaul is a family owned and operated business
+                                    ProHaul is a family owned and operated business.
                                 </li>
                                 <li className='mb-5'>
                                     We offer a hassle-free solution to clutter and waste removal. Customers can schedule pickups at their convenience, saving them time and effort compared to DIY disposal methods.
@@ -101,12 +102,14 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                 </li>
 
                                 <li className='mb-5'>
-                                    So what are you waiting for? Let's get rid of your junk today, call or text us at 978-877-9784!
+                                    So what are you waiting for? <br/> Let's get rid of your junk today, call or text us at 978-877-9784!
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </section>
+
+                <Footer />
 
                     {/* <div className="sm:fixed sm:top-0 sm:right-0 p-6 text-right">
                         {auth.user ? (
@@ -134,8 +137,6 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             </>
                         )}
                     </div> */}
-
-
             </div>
         </>
     );
