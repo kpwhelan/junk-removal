@@ -13,7 +13,9 @@ export default {
     theme: {
         extend: {
             colors: {
-                'my-gray': '#333333'
+                'my-gray': '#333333',
+                'my-light-gray': '#727272',
+                'my-sage': '#5f7d54'
             },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
