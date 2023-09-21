@@ -36,12 +36,62 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     </div>
                 </section>
 
-                <section className='mb-2'>
-                    <div className='p-2 flex justify-around place-items-center text-white'>
-                        <div className='bg-my-sage w-[45%] rounded-lg'>
-                            <div className='flex items-center justify-between p-3 bg-my-gray bg-opacity-75 h-52 rounded-lg'>
-                                <FontAwesomeIcon icon={faTruck} size='2x'/>
+                {/* <section className='mb-2'>
+                    <div className='p-2 max-w-[75%] mx-auto text-white'>
+                        <div className='bg-my-sage rounded-lg mb-6'>
+                            <div className='flex items-center justify-around p-3 bg-my-gray bg-opacity-75 h-52 rounded-lg'>
+                                <div className='flex items-center justify-around w-[40%]'>
+                                    <FontAwesomeIcon icon={faTruck} size='2x'/>
 
+                                    <p className='text-[2.5rem]'>Services Offered</p>
+                                </div>
+
+                                <ul className='text-lg'>
+                                    <li>Trash and junk removal</li>
+                                    <li>Home and Garage cleanouts</li>
+                                    <li>Furniture disposal</li>
+                                    <li>Appliance disposal</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className='bg-my-sage rounded-lg'>
+                            <div className='flex items-center justify-around p-3 bg-my-gray bg-opacity-75 h-52 rounded-lg'>
+                                <div className='flex items-center justify-around w-[40%]'>
+                                    <FontAwesomeIcon icon={faTrashCan} size='2x'/>
+
+                                    <p className='text-[2.5rem]'>Items We Take</p>
+                                </div>
+
+                                <div className='flex justify-around w-[30%]'>
+                                    <ul className='text-lg'>
+                                        <li>Household trash</li>
+                                        <li>Appliances</li>
+                                        <li>Clothing</li>
+                                        <li>Furniture</li>
+                                        <li>Recreational items</li>
+                                        <li>Scrap metal</li>
+                                    </ul>
+
+                                    <ul className='text-lg'>
+                                        <li>Used motor oil</li>
+                                        <li>Tires</li>
+                                        <li>Tools</li>
+                                        <li>Yard waste</li>
+                                        <li className='font-bold'>And more!</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> */}
+
+                <section>
+                    <div className='w-[60%] mx-auto flex flex-col lg:flex-row lg:justify-between'>
+                        <div className='text-center my-5 w-[50%] mx-auto'>
+                            <FontAwesomeIcon icon={faTruck} color='#5f7d54' size='4x' />
+
+                            <div>
                                 <p className='text-[2.5rem]'>Services Offered</p>
 
                                 <ul className='text-lg'>
@@ -53,36 +103,41 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             </div>
                         </div>
 
-                        <div className='bg-my-sage w-[45%] rounded-lg'>
-                            <div className='flex items-center justify-between p-3 bg-my-gray bg-opacity-75 h-52 rounded-lg'>
-                                <FontAwesomeIcon icon={faTrashCan} size='2x'/>
+                        <div className='text-center my-5 w-[50%] mx-auto'>
+                            <FontAwesomeIcon icon={faTrashCan} color='#5f7d54' size='4x'/>
 
+                            <div>
                                 <p className='text-[2.5rem]'>Items We Take</p>
 
-                                <ul className='text-xl'>
-                                    <li>Household trash</li>
-                                    <li>Appliances</li>
-                                    <li>Clothing</li>
-                                    <li>Furniture</li>
-                                    <li>Recreational items</li>
-                                    <li>Scrap metal</li>
-                                </ul>
+                                <div className='flex justify-around'>
+                                    <ul className='text-lg'>
+                                        <li>Household trash</li>
+                                        <li>Appliances</li>
+                                        <li>Clothing</li>
+                                        <li>Furniture</li>
+                                    </ul>
 
-                                <ul className='text-xl'>
-                                    <li>Used motor oil</li>
-                                    <li>Tires</li>
+                                    <ul className='text-lg'>
+                                        <li>Recreational items</li>
+                                        <li>Scrap metal</li>
+                                        <li>Used motor oil</li>
+                                        <li>Tires</li>
+                                    </ul>
+
+                                    <ul className='text-lg'>
                                     <li>Tools</li>
-                                    <li>Yard waste</li>
-                                    <li className='font-bold'>And more!</li>
-                                </ul>
+                                        <li>Yard waste</li>
+                                        <li className='font-bold'>And more!</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
                 <section className='mb-2'>
-                    <div className="min-h-fit flex justify-center text-white bg-[url('/resources/assets/junk-pic-1.jpg')] bg-center bg-cover bg-opacity-80">
-                        <div className='p-3 text-center bg-my-light-gray max-w-[60%] bg-opacity-90'>
+                    <div className="min-h-fit rounded-lg flex justify-center text-white bg-[url('/resources/assets/junk-pic-1.jpg')] bg-center bg-cover bg-opacity-80">
+                        <div className='p-3 text-center bg-my-light-gray max-w-[90%] lg:max-w-[60%] bg-opacity-90'>
                             <p className='text-[4em]'>Why ProHaul?</p>
                             <ul className='text-[1.5em]'>
                                 <li className='mb-5'>
